@@ -36,7 +36,7 @@ jobs:
         id: aws-login-sbx
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-region: eu-west-2
+          aws-region: us-east-1
           role-to-assume: ${{ vars.AWS_IAM_ROLE_ARN }}
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
 
