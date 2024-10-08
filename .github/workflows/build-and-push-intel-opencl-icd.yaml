@@ -57,7 +57,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            ${{ steps.login-ecr-sbx.outputs.registry }}/intel/intel-opencl-icd
+            ${{ steps.login-ecr-sbx.outputs.registry }}/v6w1z1a9/intel/intel-opencl-icd
           tags: |
             type=raw,value=latest
             type=raw,value=${{ steps.git_metadata.outputs.sha_short }}
